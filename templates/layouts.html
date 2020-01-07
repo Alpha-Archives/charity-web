@@ -1,0 +1,75 @@
+<!--<!DOCTYPE html>-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="author" content="DreamGeeks Interactive">
+  <meta name="keyword" content="template, html5, css3, bootstrap">
+  <meta name="description" content="HTML5 and CSS3 Template Based on Bootstrap 4">
+  <title>Charity Webs | Made with Python & Bulma</title>
+
+  <!-- VENDORS -->
+  <link rel="stylesheet" href="{{url_for('static',filename='css/bulma.css')}}">
+
+  <!-- FONTS -->
+  <link rel="stylesheet" href="{{url_for('static',filename='ionicons/css/ionicons.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='fonts/hk-grotesk/style.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='fonts/fontello/css/fontello.css')}}">
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="{{url_for('static',filename='css/charity.css')}}">
+</head>
+
+
+<!-- BEGIN BODY -->
+
+<body>
+
+  <!-- Banner -->
+  <div class="banner">
+    <p>WE'VE RAISED $2M SINCE 2017. HELP US REACH MORE KIDS AND FAMILIES
+      <a href="#" class="btn btn-donate">DONATE NOW</a>
+    </p>
+  </div>
+  <!--End Banner -->
+
+  <div class="line"></div>
+
+  <!-- Navigation -->
+  <div class="navbar-menu">
+    <div class="nav-start">
+      <div class="nav-item">
+        <img src="/static/img/logo_charity.png" />
+      </div>
+    </div>
+    <div class="navbar-end">
+      <div class="nav-item">
+        <a class="active" href="#">Home</a>
+      </div>
+      <div class="nav-item">
+        <a href="#">Who Are We</a>
+      </div>
+      <div class="nav-item">
+        <a href="#">What We Do</a>
+      </div>
+      <div class="nav-item">
+        <a href="#">How To Help</a>
+      </div>
+      <div class="nav-item">
+        <a href="#">Get In Touch</a>
+      </div>
+      <div class="nav-item">
+        <a href="#">Donate</a>
+      </div>
+    </div>
+  </div>
+  <!--End Navigation -->
+
+  {%block content%}
+  {%endblock%}
+
+</body>
+<!-- END BODY -->
+
+</html>
